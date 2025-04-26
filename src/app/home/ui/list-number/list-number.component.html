@@ -1,0 +1,7 @@
+<ion-list>
+  @for (item of db.currentMultiples(); track item.value) {
+  <ion-item [color]="colors[item.color]">
+    <ion-label>{{ item.value }}</ion-label>
+  </ion-item>
+  }
+</ion-list>
