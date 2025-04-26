@@ -7,7 +7,6 @@ import {
   IonCard,
   IonCardHeader,
   IonCardContent,
-  IonCardSubtitle,
   IonInput,
   IonButton,
   IonIcon,
@@ -19,6 +18,7 @@ import {
   IonItem,
   IonLabel,
   MenuController,
+  IonFooter,
 } from '@ionic/angular/standalone';
 import { RealtimeDbService } from '../shared/services/RealtimeDb.service';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
@@ -29,6 +29,7 @@ import { ListNumberComponent } from './ui/list-number/list-number.component';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   imports: [
+    IonFooter,
     IonLabel,
     IonItem,
     IonList,
@@ -37,7 +38,6 @@ import { ListNumberComponent } from './ui/list-number/list-number.component';
     IonIcon,
     IonButton,
     IonInput,
-    IonCardSubtitle,
     IonCardContent,
     IonCardHeader,
     IonCard,
