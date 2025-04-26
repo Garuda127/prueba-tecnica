@@ -21,6 +21,14 @@ import {
 } from '@angular/fire/app';
 import { getDatabase, provideDatabase } from '@angular/fire/database';
 
+import { addIcons } from 'ionicons';
+import { searchOutline } from 'ionicons/icons';
+
+// Registro de iconos
+addIcons({
+  'search-outline': searchOutline,
+});
+
 bootstrapApplication(AppComponent, {
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },

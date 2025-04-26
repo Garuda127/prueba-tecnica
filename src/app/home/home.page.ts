@@ -56,7 +56,6 @@ export class HomePage {
   fb = inject(FormBuilder);
   menu = inject(MenuController);
   //Propiedades
-  isAlertOpen = signal(false);
   message = signal('');
 
   header = signal('Blank');
@@ -67,6 +66,7 @@ export class HomePage {
   });
 
   onSubmit() {
+    if (!this.myForm.valid) return;
     const value = this.myForm.get('number')?.value as number;
     this.db.generateAndSaveMultiples(value);
   }
